@@ -27,6 +27,7 @@ a {
   position: absolute;
   bottom: 60px;
   right: 50px;
+  display: center;
 }
 .ear {
   height: 15px;
