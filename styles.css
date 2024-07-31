@@ -25,6 +25,8 @@ a {
   width: 80px;
   border-radius: 0 80px 80px 0;
   position: absolute;
+  bottom: 195px;
+  right: 500px;
 }
 .ear {
   height: 15px;
