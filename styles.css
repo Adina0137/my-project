@@ -13,7 +13,7 @@ a {
     rgba(255, 215, 185, 0.91) 23%,
     rgba(223, 159, 247, 0.8) 93%
   );
-  max-width: 600px;
+  max-width: 700px;
   margin: 60px auto;
   padding: 30px;
   border-radius: 10px;
@@ -25,9 +25,8 @@ a {
   width: 80px;
   border-radius: 0 80px 80px 0;
   position: absolute;
-  bottom: 60px;
-  right: 50px;
-  display: center;
+  bottom: 195px;
+  right: 500px;
 }
 .ear {
   height: 15px;
