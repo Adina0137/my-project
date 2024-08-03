@@ -5,10 +5,7 @@ function displayTemperature(response) {
   cityElement.innerHTML = response.data.city;
   newTemperature.innerHTML = displaynew;
 }
-//function displayIcon(response) {
-//  let iconElement = document.querySelector("#current-temperature-icon");
-// console.log(iconElement);
-//}
+
 
 function search(event) {
   event.preventDefault();
