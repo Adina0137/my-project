@@ -9,14 +9,27 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="styles.css" />
-    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
-    <title>My weather application</title>
+    <title>Weather Project</title>
   </head>
   <body>
     <div class="weather-app">
+      <div class="shadow"></div>
+      <div class="cat">
+        <div class="ear"></div>
+        <div class="eye"></div>
+        <div class="mouth"></div>
+        <div class="nose"></div>
+        <div class="tail"></div>
+        <div class="body"></div>
+        <div class="bubble"></div>
+      </div>
+
       <header>
         <form id="search-form">
+          <div class="shadow"></div>
+
           <input
             type="search"
             placeholder="Enter a city.."
@@ -27,26 +40,106 @@
           <input type="submit" value="Search" class="search-button" />
         </form>
       </header>
+
       <main>
         <div class="current-weather">
           <div>
-            <h1 class="current-city" id="current-city">Paris</h1>
+            <h1 class="current-city" id="current_city">Paris</h1>
             <p class="current-details">
-              <span id="current-date"></span>, moderate rain <br />
-              Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h</strong>
+              <span id="current-time">Friday,11:26,</span>
+              <span id="condition">moderate rain </span> <br />
+              Humidity: <strong><span id="humidity-details">87%</span></strong
+              >, Wind: <strong><span id="wind-details">7.2km/h</span></strong>
             </p>
           </div>
           <div class="current-temperature">
-            <span class="current-temperature-icon" id="current-temperature-icon"
-              >☀️ </span
-            ><span class="current-temperature-value" id="current-temperature"
+            <div id="icon"></div>
+            <span class="current-temperature-value" id="temperature"></span>
+            <span class="current-temperature-icon"></span>
+            <span class="current-temperature-value" id="current-temperature"
               >24</span
             ><span class="current-temperature-unit">°C</span>
           </div>
         </div>
-      </main>
-      <footer>
-        <p>
+
+        <div class="weather-forecast" id="forecast">
+          <div class="weather-forecast-day">
+            <div class="weather-forecast-date">Tue</div>
+
+            <img
+              src="https://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png"
+              class="weather-forecast-icon"
+              id="iconTwo"
+            />
+            <div class="weather-forecast-temperatures">
+              <div class="weather-forecast-temperature">
+                <strong>16º</strong>
+              </div>
+              <div class="weather-forecast-temperature">10º</div>
+            </div>
+          </div>
+
+          <div class="weather-forecast-day">
+            <div class="weather-forecast-date">Wed</div>
+
+            <img
+              src="https://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png"
+              class="weather-forecast-icon"
+            />
+            <div class="weather-forecast-temperatures">
+              <div class="weather-forecast-temperature">
+                <strong>16º</strong>
+              </div>
+              <div class="weather-forecast-temperature">13º</div>
+            </div>
+          </div>
+
+          <div class="weather-forecast-day">
+            <div class="weather-forecast-date">Thu</div>
+
+            <img
+              src="https://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png"
+              class="weather-forecast-icon"
+            />
+            <div class="weather-forecast-temperatures">
+              <div class="weather-forecast-temperature">
+                <strong>18º</strong>
+              </div>
+              <div class="weather-forecast-temperature">10º</div>
+            </div>
+          </div>
+
+          <div class="weather-forecast-day">
+            <div class="weather-forecast-date">Fri</div>
+
+            <img
+              src="https://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png"
+              class="weather-forecast-icon"
+            />
+            <div class="weather-forecast-temperatures">
+              <div class="weather-forecast-temperature">
+                <strong>17º</strong>
+              </div>
+              <div class="weather-forecast-temperature">10º</div>
+            </div>
+          </div>
+
+          <div class="weather-forecast-day">
+            <div class="weather-forecast-date">Sat</div>
+
+            <img
+              src="https://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png"
+              class="weather-forecast-icon"
+            />
+            <div class="weather-forecast-temperatures">
+              <div class="weather-forecast-temperature">
+                <strong>16º</strong>
+              </div>
+              <div class="weather-forecast-temperature">12º</div>
+            </div>
+          </div>
+        </div>
+        <footer>
           This project was coded by
           <a href="https://github.com/Adina0137" target="_blank"
             >Adina Ciulei</a
@@ -59,9 +152,10 @@
           <a href="https://app.netlify.com/user/settings" target="_blank"
             >hosted on Netlify</a
           >
-        </p>
-      </footer>
+        </footer>
+      </main>
     </div>
+
+    <script src="index.js"></script>
   </body>
-  <script src="index.js"></script>
 </html>
