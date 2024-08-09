@@ -15,7 +15,7 @@ function updateWeatherApp(response) {
   let date = new Date(response.data.time * 1000);
   timeElement.textContent = formattedDate(date);
   let iconElement = document.querySelector("#icon");
-  //console.log(response.data.condition.icon_url)
+
   iconElement.innerHTML = `<img src="https://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png"  class="current-temperature-icon"/>`;
 }
 
