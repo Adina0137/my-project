@@ -15,130 +15,37 @@
   </head>
   <body>
     <div class="weather-app">
-      <div class="shadow"></div>
-      <div class="cat">
-        <div class="ear"></div>
-        <div class="eye"></div>
-        <div class="mouth"></div>
-        <div class="nose"></div>
-        <div class="tail"></div>
-        <div class="body"></div>
-        <div class="bubble"></div>
-      </div>
-
       <header>
         <form id="search-form">
-          <div class="shadow"></div>
-
           <input
             type="search"
             placeholder="Enter a city.."
             required
             class="search-input"
-            id="search-input"
+            id="search-form-input"
           />
           <input type="submit" value="Search" class="search-button" />
         </form>
       </header>
-
       <main>
         <div class="current-weather">
           <div>
-            <h1 class="current-city" id="current_city">Paris</h1>
+            <h1 class="current-city" id="city"></h1>
             <p class="current-details">
-              <span id="current-time">Friday,11:26,</span>
-              <span id="condition">moderate rain </span> <br />
-              Humidity: <strong><span id="humidity-details">87%</span></strong
-              >, Wind: <strong><span id="wind-details">7.2km/h</span></strong>
+              <span id="time"></span>, <span id="description"> </span><br />
+              Humidity: <strong id="humidity"></strong>, Wind:
+              <strong id="wind-speed"></strong>
             </p>
           </div>
           <div class="current-temperature">
             <div id="icon"></div>
-            <span class="current-temperature-value" id="temperature"></span>
-            <span class="current-temperature-icon"></span>
-            <span class="current-temperature-value" id="current-temperature"
-              >24</span
+            <span class="current-temperature-value" id="temperature"></span
             ><span class="current-temperature-unit">°C</span>
           </div>
         </div>
 
-        <div class="weather-forecast" id="forecast">
-          <div class="weather-forecast-day">
-            <div class="weather-forecast-date">Tue</div>
+        <div class="weather-forecast" id="forecast"></div>
 
-            <img
-              src="https://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png"
-              class="weather-forecast-icon"
-              id="iconTwo"
-            />
-            <div class="weather-forecast-temperatures">
-              <div class="weather-forecast-temperature">
-                <strong>16º</strong>
-              </div>
-              <div class="weather-forecast-temperature">10º</div>
-            </div>
-          </div>
-
-          <div class="weather-forecast-day">
-            <div class="weather-forecast-date">Wed</div>
-
-            <img
-              src="https://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png"
-              class="weather-forecast-icon"
-            />
-            <div class="weather-forecast-temperatures">
-              <div class="weather-forecast-temperature">
-                <strong>16º</strong>
-              </div>
-              <div class="weather-forecast-temperature">13º</div>
-            </div>
-          </div>
-
-          <div class="weather-forecast-day">
-            <div class="weather-forecast-date">Thu</div>
-
-            <img
-              src="https://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png"
-              class="weather-forecast-icon"
-            />
-            <div class="weather-forecast-temperatures">
-              <div class="weather-forecast-temperature">
-                <strong>18º</strong>
-              </div>
-              <div class="weather-forecast-temperature">10º</div>
-            </div>
-          </div>
-
-          <div class="weather-forecast-day">
-            <div class="weather-forecast-date">Fri</div>
-
-            <img
-              src="https://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png"
-              class="weather-forecast-icon"
-            />
-            <div class="weather-forecast-temperatures">
-              <div class="weather-forecast-temperature">
-                <strong>17º</strong>
-              </div>
-              <div class="weather-forecast-temperature">10º</div>
-            </div>
-          </div>
-
-          <div class="weather-forecast-day">
-            <div class="weather-forecast-date">Sat</div>
-
-            <img
-              src="https://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png"
-              class="weather-forecast-icon"
-            />
-            <div class="weather-forecast-temperatures">
-              <div class="weather-forecast-temperature">
-                <strong>16º</strong>
-              </div>
-              <div class="weather-forecast-temperature">12º</div>
-            </div>
-          </div>
-        </div>
         <footer>
           This project was coded by
           <a href="https://github.com/Adina0137" target="_blank"
